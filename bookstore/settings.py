@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-f*k@=53bc5!shef1-6w+m$-g)kspbaljz%8k4(j7iuc-u2_dyd
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'bookstore-ebac-api-9d955f9bcb53.herokuapp.com', 'claudioFerreira.pythonanywhere.com']
+ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1', '0.0.0.0', 'bookstore-ebac-api-9d955f9bcb53.herokuapp.com', 'claudioFerreira.pythonanywhere.com']
 
 # Application definition
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "debug_toolbar",
     "rest_framework.authtoken",
+    "whitenoise.runserver_nostatic",
 ]
 
 MIDDLEWARE = [
